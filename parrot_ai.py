@@ -7,4 +7,4 @@ def get_parrot_response(user_text: dict) -> str:
     # 3. 呼叫 API
     # 4. 解析 JSON 回應
 
-    return f"[AI 暫停服務] 你剛剛說了：{user_text}"
+    return f"請將以下這句話改成用：{user_text["mood"]}的心情呈現：{user_text["input"]}"
